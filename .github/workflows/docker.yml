@@ -24,7 +24,7 @@ jobs:
       uses: docker/login-action@v3
       with:
         username: badri.vaikunth@gmail.com
-        password: ${{ vars.dockerpassword }}
+        password: ${{ secrets.dockerpassword }}
     - name: Docker Info
       run: docker info
     - name: Docker HelloWorld
